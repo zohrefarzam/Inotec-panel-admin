@@ -1,0 +1,31 @@
+@import "../../../../shared/styles/variables.styl"
+
+.entity-item
+    .entity-item
+        &__form
+            padding: 40px
+            padding-bottom: 20px
+        &__form-row
+            display: flex
+            margin-bottom: 20px
+            min-height: 42px
+            align-items: flex-start
+            label 
+                margin-right: 24px
+                margin-top: 5px
+                min-width: 100px
+                font-size: 16px
+            .dropdown
+                div:first-child
+                    margin: 0
+                    min-width: 170px
+        &__field-group
+            display: flex
+            flex-direction: column
+        &__form-input
+            min-width: 200px
+            &-checkbox
+                padding: 0
+        &__error-field
+            color: $color-danger
+            margin-bottom: 0

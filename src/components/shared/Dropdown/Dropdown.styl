@@ -1,0 +1,20 @@
+@import "../styles/variables.styl"
+
+.dropdown
+    *
+        transition: all 300ms ease
+        color: #555 !important
+        &:hover, &:focus, &:active
+            color: $color-dark-active 
+    &.active
+        *
+            color: $color-dark-active !important
+    .dropdown
+        &__select
+            color: $color-dark-active 
+            border-bottom: 1px solid $color-dark-disabled
+            &_active,
+            &:hover
+                border-bottom: 2px solid $color-dark-active 
+            input, svg
+                color: $color-dark-active 

@@ -1,0 +1,26 @@
+@import "../styles/variables.styl"
+
+.page-size
+    height: 20px
+    margin-right: 24px
+    margin-top: -3px
+    *
+        transition: all 300ms ease
+        color: $color-dark-active !important
+        &:hover, &:focus, &:active
+            color: $color-dark-active
+    &.active
+        *
+            color: $color-dark-active !important
+    .page-size
+        &__select
+            color: $color-dark-active
+            border-bottom: 1px solid $color-dark-active
+            &_active,
+            &:hover
+                border-bottom: 1px solid $color-dark-active
+            input, svg
+                color: $color-dark-active
+    span 
+        margin-right: 12px
+        color: $color-dark-active

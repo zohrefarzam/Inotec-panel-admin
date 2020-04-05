@@ -1,0 +1,19 @@
+@import "../../styles/variables.styl"
+
+.table
+    .table
+        &__item-link
+            border: none
+            cursor: pointer
+            font-weight: bold
+            color: $color-controls-accent
+            text-decoration: underline
+        &__actions
+            display: flex
+            svg 
+                margin: 0 8px
+                cursor: pointer
+                &:first-child
+                    color: $color-controls-accent
+                &:last-child
+                    color: $color-danger

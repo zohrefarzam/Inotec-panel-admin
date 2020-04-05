@@ -1,0 +1,64 @@
+@import "../styles/variables.styl"
+
+.card
+    background: transparent
+    box-shadow: none
+    border: 0
+    margin-bottom: 30px
+    margin-top: 30px
+    border-radius: 6px
+    color: rgba(0 0 0 0.87)
+    background: #fff
+    width: 100%
+    box-shadow: 0 1px 4px 0 rgba(0 0 0 0.14)
+    position: relative
+    display: flex
+    flex-direction: column
+    min-width: 0
+    word-wrap: break-word
+    font-size: .875rem
+    &__body
+        overflow-x: scroll
+        flex: 1 1 auto
+        position: relative
+        padding-left: 5px
+        padding-right: 5px
+    &__header
+        padding: 15px
+        overflow-x: scroll
+        background: $gradient-accent
+        color: #FFFFFF
+        position: relative
+        box-shadow: $box-shadow-accent
+        border-radius: 3px
+        margin-bottom: 0
+        border-bottom: none
+        z-index: 3 !important
+        margin: 0 15px
+        margin-top: -20px
+        h4
+            font-size: 18px
+            margin-top: 0
+            margin-bottom: 0
+            cursor: default
+        p
+            font-weight: 300
+            margin-bottom: 3px
+            -webkit-text-decoration: 'none'
+            text-decoration: 'none'
+            margin-top: 14px
+            margin-bottom: 3px
+            cursor: default
+    &__footer
+        padding: 0
+        padding-left: 5px
+        padding-right: 5px
+        padding-top: 10px
+        background-color: transparent
+        margin: 0 15px 20px
+        border-radius: 0
+        justify-content: space-between
+        align-items: center
+        display: flex
+        background-color: transparent
+        border: 0

@@ -1,0 +1,20 @@
+@import "../styles/variables.styl"
+
+.filter
+    *
+        transition: all 300ms ease
+        color: $color-light-disabled !important
+        &:hover, &:focus, &:active
+            color: $color-light-active 
+    &.active
+        *
+            color: $color-light-active  !important
+    .filter
+        &__select
+            color: $color-light-active 
+            border-bottom: 1px solid $color-light-disabled
+            &_active,
+            &:hover
+                border-bottom: 1px solid $color-light-active 
+            input, svg
+                color: $color-light-active 
