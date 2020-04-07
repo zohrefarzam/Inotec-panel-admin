@@ -2,7 +2,10 @@
   "name": "react-rest-admin-panel",
   "version": "1.0.0",
   "description": "Project that will help you to create admin panel for REST API from scratch.",
+  "homepage": "https://zohrefarzam.github.io/Inotec-panel-admin",
   "scripts": {
+    "predeploy": "REACT_APP_BUILD_MODE=development yarn run bld",
+    "deploy": "gh-pages -d build",
     "start": "NODE_ENV=development webpack-dev-server  --config config/webpack.config.dev.js --mode development",
     "bld": "sh -ac '. ./.env.${REACT_APP_BUILD_MODE}; node ./config/scripts/build.js'",
     "build": "REACT_APP_BUILD_MODE=development yarn run bld",
@@ -25,6 +28,7 @@
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "components": "^0.1.0",
+    "env-cmd": "^10.1.0",
     "faker": "^4.1.0",
     "history": "^4.7.2",
     "lodash": "^4.17.11",
